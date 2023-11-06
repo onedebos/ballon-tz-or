@@ -1,8 +1,8 @@
-This is a [Tezos](https://tezos.com/) voting dApp example project.
-
 ## Getting Started
 
-First, run the development server:
+This is a [Tezos](https://tezos.com/) voting dApp example project.
+
+To get started, first, run the development server:
 
 ```bash
 npm run dev
