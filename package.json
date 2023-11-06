@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@airgap/beacon-sdk": "^4.0.12",
+    "@taquito/beacon-wallet": "^17.3.2",
     "@taquito/taquito": "^17.3.2",
     "next": "14.0.1",
     "react": "^18",
