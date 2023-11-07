@@ -12,11 +12,11 @@ export default function Home() {
         <h1 className="text-2xl font-bold mb-3">Ballon Tz'or 2023</h1>
       </div>
       <div className="flex flex-col items-center w-full gap-2">
-        <Card playerName={"Player Name"} />
-        <Card playerName={"Player Name"} />
-        <Card playerName={"Player Name"} />
-        <Card playerName={"Player Name"} />
-        <Card playerName={"Player Name"} />
+        <Card playerName={"Player Name"} votes={0} />
+        <Card playerName={"Player Name"} votes={0} />
+        <Card playerName={"Player Name"} votes={0} />
+        <Card playerName={"Player Name"} votes={0} />
+        <Card playerName={"Player Name"} votes={0} />
       </div>
     </main>
   );
