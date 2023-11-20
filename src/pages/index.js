@@ -86,8 +86,8 @@ export default function Home() {
       const contract = await Tezos.wallet.at(CONTRACT_ADDRESS);
       const op = await contract.methods.increase_votes(playerId).send();
       setMessage("Awaiting Confirmation....");
-      const hash = await op.confirmation(2);
-      console.log(hash);
+      const { hash } = await op.confirmation(2);
+      console.log("hash:  ", hash);
       if (hash) {
         setMessage("Vote Confirmed.");
         setReload(true);
