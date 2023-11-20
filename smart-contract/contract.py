@@ -4,9 +4,9 @@ import smartpy as sp
 @sp.module
 def main():
     class Voting(sp.Contract):
-        def __init__(self, players, votersWalletAddress):
+        def __init__(self, players, votersWalletAddresses):
             self.data.players = players
-            self.data.votersWalletAddresses = votersWalletAddress
+            self.data.votersWalletAddresses = votersWalletAddresses
             self.data.dummy = ""
 
         @sp.entrypoint
