@@ -3,9 +3,13 @@ import smartpy as sp
 
 @sp.module
 def main():
+    players_type: type = sp.map[
+        sp.int, sp.record(name=sp.string, year=sp.string, votes=sp.nat)
+    ]
+
     class Voting(sp.Contract):
         def __init__(self, players, votersWalletAddresses):
-            self.data.players = players
+            self.data.players = sp.cast(players, players_type)
             self.data.votersWalletAddresses = votersWalletAddresses
             self.data.dummy = ""
 
