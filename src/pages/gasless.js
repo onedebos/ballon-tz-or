@@ -8,7 +8,7 @@ import {
   CONTRACT_ADDRESS,
   RPC_URL,
   GAS_STATION_API_URL,
-} from "@/helpers/constants";
+} from "../helpers/constants-gasless";
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 
