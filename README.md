@@ -31,6 +31,12 @@ Follow along with the Frontend of this tutorial by following [this post](https:/
 - [Taquito](https://taquito.com) - Interact with the Tezos blockchain using Taquito.
 - [Beacon SDK](https://docs.walletbeacon.io/) - Beacon implements the [tzip-10](https://gitlab.com/tzip/tzip/tree/master/proposals/tzip-10) proposal allowing dApps interact with tezos wallets.
 
+## Meta Transactions on Tezos
+
+This repository also demonstrates how Meta transactions/gasless transactions work on Tezos. Read more [here](https://medium.com/@adebola-niran/how-to-pay-gas-fees-for-users-of-your-dapp-meta-transactions-on-tezos-018125b16651).
+
+To see it in action, run the application and head to `/gasless` in your browser.
+
 ## More Tezos
 
 Learn more about building on [Tezos](https://docs.tezos.com)
