@@ -16,6 +16,12 @@ npm install
 
 to install the necessary libraries.
 
+```bash
+npm run dev
+```
+
+to run the application. It'll start up on `localhost:3000` by default. Make sure to update the `CONTRACT_ADDRESS` in helpers/constants.js to use your preferred smart contract.
+
 Create and deploy the dApp's smart contract by following [this tutorial](https://medium.com/@adebola-niran/how-to-build-a-voting-dapp-on-tezos-with-python-and-react-part-1-1b05e7b8f338).
 
 Follow along with the Frontend of this tutorial by following [this post](https://medium.com/@adebola-niran/how-to-build-a-voting-dapp-on-tezos-with-python-and-react-part-2-ac44393331f5).
