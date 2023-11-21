@@ -119,6 +119,7 @@ export default function Home() {
   const callGasStation = async (playerId) => {
     try {
       console.log("in call Gas station");
+      setMessage("Awaiting Confirmation....");
       const contract = await Tezos.wallet.at(CONTRACT_ADDRESS);
       const op = await contract.methods
         .increase_votes(playerId, userAddress)
@@ -130,7 +131,14 @@ export default function Home() {
         sender: userAddress,
         operations: [{ destination: op.to, parameters: op.parameter }],
       });
-      console.log("Gas Station Response:", response.data);
+
+      const { result } = response.data;
+
+      if (result == "ok") {
+        setMessage("Vote Confirmed.");
+        setReload(true);
+      }
+      console.log("in Call Gas Station:", response.data);
     } catch (error) {
       console.log(error.message);
       setMessage(error.message);
